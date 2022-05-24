@@ -1,0 +1,91 @@
+<!DOCTYPE html >
+<html lang="en"><!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="/css/style.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&amp;display=swap" rel="stylesheet">
+      <title>Ejercicios - curso práctico de JavaScript</title>
+    </head>
+    <body> </body>
+  </html>
+  <body> 
+    <div class="header">
+      <figure class="header__logo"> <img src="/assets/icons/calculator.svg"></figure>
+      <div class="header__title"> 
+        <div class="header__title-top">
+          <h1>Curso práctico de JavaScript </h1>
+        </div>
+        <div class="header__title-down"> 
+          <h2>Ejercicios</h2>
+        </div>
+      </div>
+    </div>
+    <section class="main">
+      <div class="line1"></div>
+      <div class="title__box">
+        <h1>Figuras Geométricas</h1>
+        <h3>Módulo 1</h3>
+      </div>
+      <div class="square__wrapper">
+        <div class="square__wrapper-title">
+          <h2>Cuadrado</h2>
+          <h3>Calcula el área y perímetro</h3>
+        </div><img src="/assets/img/square.png" alt="">
+        <form action="">
+          <label for="squareInput">Coloque cuanto mide uno de los lados</label>
+          <input type="number" id="squareInput">
+          <div class="form__buttons">
+            <button type="button" onclick="calcularAreaCuadrado()">Calcular área</button>
+            <button type="button" onclick="calcularPerimetroCuadrado()">Calcular perímetro</button>
+          </div>
+          <p class="result" id="squareResult"></p>
+        </form>
+      </div>
+      <div class="triangle__wrapper"> 
+        <div class="triangle__wrapper-title"> 
+          <h2>Triangulo Equilátero</h2>
+          <h3>Calcula el área y perímetro</h3>
+        </div><img src="/assets/img/triangle.png" alt="">
+        <form action="">
+          <label for="triangleSiteInput">Coloque cuanto mide uno de los lados</label>
+          <input type="number" id="triangleSiteInput">
+          <label for="triangleHeightInput">Coloque cuanto mide la altura </label>
+          <input type="number" id="triangleHeightInput">
+          <div class="form__buttons">
+            <button type="button" onclick="calcularAreaTriangulo()">Calcular área</button>
+            <button type="button" onclick="calcularPerimetroTriangulo()">Calcular perímetro</button>
+          </div>
+          <p class="result" id="triangleResult"> </p>
+        </form>
+      </div>
+      <div class="circle__wrapper"> 
+        <div class="circle__wrapper-title">
+          <h2>Círculo</h2>
+          <h3>Calcula el área, perímetro y el diámetro </h3>
+        </div><img src="/assets/img/circle.png" alt="">
+        <form action="">
+          <label for="circleInput">Coloque cuanto mide el radio </label>
+          <input type="number" id="circleInput">
+          <div class="form__buttons">
+            <button type="button" onclick="calcularAreaCirculo()">Calcular área</button>
+            <button type="button" onclick="calcularPerimetroCirculo()">Calcular perímetro</button>
+            <button type="button" onclick="calcularDiametroCirculo()">Calcular diámetro</button>
+          </div>
+          <p class="result" id="circleResult"> </p>
+        </form>
+      </div><a href="index.html">Regresar</a>
+      <div class="line2"></div>
+    </section>
+    <footer class="footer">
+      <div class="footer__title"> 
+        <h2>Creado por Alejandro Daniel Calderón Prin</h2>
+      </div>
+    </footer>
+    <script src="/varios.js"></script>
+  </body>
+</html>
