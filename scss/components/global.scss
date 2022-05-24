@@ -1,0 +1,23 @@
+// Variables
+$font1: 'Roboto', sans-serif;
+$first-color: #525252;
+$secondary-color: #fbfbfb;
+$variation-color: #836ea7;
+$variation2-color: #b79ce6;
+$button-color: #b6f685;
+$button-active: #7cff17;
+$white-color: #fff;
+$black-color: #2e2e2e;
+
+
+// Global
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font1;
+    font-size: 62.5%;
+}

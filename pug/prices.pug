@@ -1,0 +1,23 @@
+extends components/template 
+
+block content 
+    .main__prices
+
+        .title__box 
+            h1 Precios y Descuentos
+            h3 Módulo 2
+
+        .prices__wrapper 
+            .prices__wrapper-title
+                h2 Calculadora
+                h3 Calcula el precio a pagar de la calculadora con descuento
+            img(src="/assets/img/calculator.png", alt="")
+            form(action="")
+                label(for="priceInput") Coloca el precio de la calculadora
+                input(type="number", value="" id="priceInput")  
+                label(for="discountInput") Indica el % de descuento
+                input(type="number", value="" id="discountInput")  
+                button(type="button" onclick="calcularPrecioDescuento()") Calcular precio                    
+                p(class="result" id="priceResult")
+
+        a(href="/html/homepage.html") Regresar

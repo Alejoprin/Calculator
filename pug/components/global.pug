@@ -1,0 +1,16 @@
+-var title = "Ejercicios - curso práctico de JavaScript"
+-var subtitle = "Creado por Alejandro Daniel Calderón Prin"
+
+mixin section(modulo,titulo,img,description,link)
+    section.box 
+        .box__top
+            h3 #{modulo}
+            .box__top-title
+                h2 #{titulo}
+                img(src="/assets/icons/" + img)
+        .box__description 
+            h3 #{description}
+            a(href="" + link) Calcular
+
+
+

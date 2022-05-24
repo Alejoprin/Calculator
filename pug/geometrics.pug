@@ -1,0 +1,56 @@
+extends components/template 
+
+block content
+    section.main
+
+        .line1
+
+        .title__box
+            h1 Figuras Geométricas
+            h3 Módulo 1
+
+        .square__wrapper
+            .square__wrapper-title
+                h2 Cuadrado
+                h3 Calcula el área y perímetro
+            img(src="/assets/img/square.png", alt="")
+            form(action="")
+                label(for="squareInput") Coloque cuanto mide uno de los lados
+                input(type="number" id="squareInput")
+                .form__buttons
+                    button(type="button" onclick="calcularAreaCuadrado()") Calcular área
+                    button(type="button" onclick="calcularPerimetroCuadrado()") Calcular perímetro
+                p(class="result" id="squareResult")
+
+        .triangle__wrapper 
+            .triangle__wrapper-title 
+                h2 Triangulo Equilátero
+                h3 Calcula el área y perímetro
+            img(src="/assets/img/triangle.png", alt="")
+            form(action="")
+                label(for="triangleSiteInput") Coloque cuanto mide uno de los lados
+                input(type="number" id="triangleSiteInput")
+                label(for="triangleHeightInput") Coloque cuanto mide la altura 
+                input(type="number" id="triangleHeightInput")
+                .form__buttons
+                    button(type="button" onclick="calcularAreaTriangulo()") Calcular área
+                    button(type="button" onclick="calcularPerimetroTriangulo()") Calcular perímetro
+                p(class="result" id="triangleResult") 
+
+        .circle__wrapper 
+            .circle__wrapper-title
+                h2 Círculo
+                h3 Calcula el área, perímetro y el diámetro 
+            img(src="/assets/img/circle.png", alt="")
+            form(action="")
+                label(for="circleInput") Coloque cuanto mide el radio 
+                input(type="number" id="circleInput")
+                .form__buttons
+                    button(type="button" onclick="calcularAreaCirculo()") Calcular área
+                    button(type="button" onclick="calcularPerimetroCirculo()") Calcular perímetro
+                    button(type="button" onclick="calcularDiametroCirculo()") Calcular diámetro
+                p(class="result" id="circleResult") 
+
+        a(href="/html/homepage.html") Regresar
+
+        .line2

@@ -1,0 +1,38 @@
+extends components/template 
+
+block content 
+    .main__average
+
+        .title__box 
+            h1 Promedio Aritmético
+            h3 Módulo 3
+        
+        .average__wrapper 
+            .average__wrapper-title
+                h2 Promedios
+                h3 Calcula la media, media ponderada, mediana y moda 
+            img(src="/assets/img/average.png", alt="")
+            form(action="")
+                .num1.num-box
+                    label(for="num1Input") Coloca el primer número
+                    input(type="number", value="" id="num1Input") 
+                .num2.num-box
+                    label(for="num2Input") Coloca el segundo número
+                    input(type="number", value="" id="num2Input")  
+                .num3.num-box
+                    label(for="num3Input") Coloca el tercer número
+                    input(type="number", value="" id="num3Input")  
+                .num4.num-box
+                    label(for="num4Input") Coloca el cuarto número
+                    input(type="number", value="" id="num4Input")  
+                .num5.num-box
+                    label(for="num5Input") Coloca el quinto número
+                    input(type="number", value="" id="num5Input")  
+                .form__buttons
+                    button(type="button" onclick="calcularMedia()") Calcular media
+                    button(type="button" onclick="calcularMediaGeometrica()") Calcular media Geométrica                   
+                    button(type="button" onclick="calcularMediana()") Calcular mediana
+                    button(type="button" onclick="calcularModa()") Calcular moda
+                p(class="result" id="averageResult")
+
+        a(href="/html/homepage.html") Regresar 
