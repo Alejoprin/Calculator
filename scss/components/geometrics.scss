@@ -37,6 +37,7 @@
         justify-content: space-evenly;
         align-items: center;
         border-radius: 10px; 
+        box-shadow: 1px 1px 2px 1px rgba($color: #707070, $alpha: .5);
         &-title{
             height: auto;
             text-align: center;
@@ -115,6 +116,7 @@
         justify-content: space-evenly;
         align-items: center;
         border-radius: 10px; 
+        box-shadow: 1px 1px 2px 1px rgba($color: #707070, $alpha: .5);
         &-title{
             height: auto;
             text-align: center;
@@ -193,6 +195,7 @@
         justify-content: space-evenly;
         align-items: center;
         border-radius: 10px; 
+        box-shadow: 1px 1px 2px 1px rgba($color: #707070, $alpha: .5);
         &-title{
             height: auto;
             text-align: center;
@@ -294,7 +297,7 @@
 
 @media (max-width: 430px) {
     .main{
-        padding: 10px;
+        padding: 10px 25px;
     }
 }
 
@@ -331,6 +334,9 @@
                 margin: 0 auto;
                 grid-area: 5 / 1 / 5 / 3;
                 border-bottom: 3px solid $secondary-color;
+            }
+            .square__wrapper{
+                height: 400px;
             }
         }
     }
